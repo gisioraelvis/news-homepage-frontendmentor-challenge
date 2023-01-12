@@ -141,3 +141,26 @@ footer {
 .attribution a {
   color: grey;
 }
+
+/* Mobile styles */
+@media (max-width: 768px) {
+  .grid-container {
+    grid-template-columns: 1fr;
+    grid-template-rows: 90px 1fr 1fr 1fr;
+    grid-template-areas:
+      "navbar"
+      "hero-section-img"
+      "hero-section-txt"
+      "sidebar"
+      "article1"
+      "article2"
+      "article3";
+  }
+
+  /*TODO: responsive hamburger menu */
+
+  .hero-section-txt {
+    display: flex;
+    flex-direction: column;
+  }
+}
